@@ -1,4 +1,4 @@
-using GeometricFiniteElements
+using GeometricFiniteElements, Test
 
 @testset "GeometricFiniteElements" begin
 

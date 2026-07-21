@@ -54,7 +54,7 @@ base_url = "https://github.com/JuliaManifolds/Manopt.jl/blob/master/"
 isdir(generated_path) || mkdir(generated_path)
 for (md_file, doc_file) in
     [
-    #   ("CONTRIBUTING.md", "contributing.md"),
+        #   ("CONTRIBUTING.md", "contributing.md"),
         ("Changelog.md", "changelog.md"),
     ]
     open(joinpath(generated_path, doc_file), "w") do io
