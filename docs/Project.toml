@@ -6,3 +6,8 @@ GeometricFiniteElements = "d7dfa289-63a8-4477-af2e-73d68cf79e45"
 
 [sources]
 GeometricFiniteElements = {path = ".."}
+
+[compat]
+Documenter = "1.17.0"
+DocumenterCitations = "1.4.1"
+DocumenterInterLinks = "1.1.0"
