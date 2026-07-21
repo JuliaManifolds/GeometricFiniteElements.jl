@@ -16,6 +16,8 @@ if "--help" ∈ ARGS
     )
     exit(0)
 end
+run_on_CI = (get(ENV, "CI", nothing) == "true")
+
 #
 # if docs is not the current active environment, switch to it
 # (from https://github.com/JuliaIO/HDF5.jl/pull/1020/) 
@@ -87,7 +89,7 @@ makedocs(;
     modules = [
         GeometricFiniteElements,
     ],
-    authors = "Ronny Bergmann <ronny.bergmann@ntnu.no>, Anton Schiela, Laura Weigl",
+    authors = "Ronny Bergmann <git@ronnybergmann.net>, Anton Schiela <anton.schiela@uni-bayreuth.de>, Laura Weigl <laura.weigl@uni-bayreuth.de>",
     sitename = "GeometricFiniteElements.jl",
     pages = [
         "Home" => "index.md",
